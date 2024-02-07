@@ -9,12 +9,9 @@ abstract: |
   This document is about converting your OneNote data to Markdown format.
 permalink: /index.html
 ---
-[![GitHub License](https://img.shields.io/github/license/SjoerdV/ConvertOneNote2MarkDown)](https://github.com/SjoerdV/ConvertOneNote2MarkDown/blob/master/LICENSE)
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSjoerdV%2FConvertOneNote2MarkDown&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://github.com/SjoerdV/ConvertOneNote2MarkDown)
-[![GitHub All Stars](https://img.shields.io/github/stars/SjoerdV/ConvertOneNote2MarkDown?label=stars)](https://github.com/SjoerdV/ConvertOneNote2MarkDown/stargazers)
-[![GitHub All Forks](https://img.shields.io/github/forks/SjoerdV/ConvertOneNote2MarkDown?label=forks)](https://github.com/SjoerdV/ConvertOneNote2MarkDown/network/members)
-[![GitHub Latest Release](https://img.shields.io/github/v/release/SjoerdV/ConvertOneNote2MarkDown?include_prereleases&color=red)](https://github.com/SjoerdV/ConvertOneNote2MarkDown/releases)
-[![GitHub All Downloads](https://img.shields.io/github/downloads/SjoerdV/ConvertOneNote2MarkDown/total?label=downloads)](https://github.com/SjoerdV/ConvertOneNote2MarkDown/releases)
+## @grumpyengineer's notes and edits
+* The pandoc conversion is now set to gfm-raw_html instead of "gfm" so that it does not export the embedded images as <img> HTML tags and instead uses GitHub Flavored Markdown Image syntax.
+* It is helpful to go through and click *every* page in OneNote so that it downloads and loads every embedded image.  Syncing the notebook does not necessary grab every linked image, and the script will end up exporting a blank image if OneNote hasn't loaded them.
 
 ## Convert OneNote to MarkDown
 

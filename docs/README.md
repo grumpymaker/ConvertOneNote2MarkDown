@@ -1,14 +1,3 @@
----
-title:  'Convert OneNote to MarkDown'
-author:
-- Sjoerd de Valk, SPdeValk Consultancy
-date: 2019-05-19 22:35:00
-last_modified_at: 2022-12-01T00:41:58+02:00
-keywords: [migration, tooling, onenote, markdown, powershell]
-abstract: |
-  This document is about converting your OneNote data to Markdown format.
-permalink: /index.html
----
 ## @grumpyengineer's notes and edits
 * The pandoc conversion is now set to gfm-raw_html instead of "gfm" so that it does not export the embedded images as <img> HTML tags and instead uses GitHub Flavored Markdown Image syntax.
 * It is helpful to go through and click *every* page in OneNote so that it downloads and loads every embedded image.  Syncing the notebook does not necessary grab every linked image, and the script will end up exporting a blank image if OneNote hasn't loaded them.

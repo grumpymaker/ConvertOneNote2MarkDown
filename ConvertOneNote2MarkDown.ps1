@@ -160,8 +160,10 @@ if (Test-Path -Path $notesdestpath) {
 
               # convert Word to Markdown
               # https://gist.github.com/heardk/ded40b72056cee33abb18f3724e0a580
+              # @grumpymaker edit - setting the output type to "gfm-raw_html" as Pandoc starting outputting image links as <img /> HTML instead of MarkDown img syntax.  gfm-raw_html reverts this behavior.
+              #     this tweak is useful for those who will ultimately be using Obsidian or similar apps.
               try {
-                pandoc.exe -f docx -t gfm -i $fullexportpath -o "$($fullexportpathwithoutextension).md" --wrap=none --markdown-headings=atx --extract-media="$($fullexportdirpath)"
+                pandoc.exe -f docx -t gfm-raw_html -i $fullexportpath -o "$($fullexportpathwithoutextension).md" --wrap=none --markdown-headings=atx --extract-media="$($fullexportdirpath)"
               }
               catch {
                 Write-Host "Error while converting file '$($page.name)' to md: $($Error[0].ToString())" -ForegroundColor Red
